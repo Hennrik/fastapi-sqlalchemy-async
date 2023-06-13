@@ -52,26 +52,6 @@ async def create_books(
     #     book = BookDTO(isbn=str(uuid.uuid4()), full_name=f"book_name_{i}", author=f"author_{i}")
     #     new_books.append(book)
     #
-    new_books = [
-        BookDTO(isbn=str(uuid.uuid4()), full_name=f"book_name_{i}", author=f"author_{i}") for i in
-        range(books_num)
-    ]
-    new_books = [
-        BookDTO(isbn=str(uuid.uuid4()), full_name=f"book_name_{i}", author=f"author_{i}") for i in
-        range(books_num)
-    ]
-    new_books = [
-        BookDTO(isbn=str(uuid.uuid4()), full_name=f"book_name_{i}", author=f"author_{i}") for i in
-        range(books_num)
-    ]
-    new_books = [
-        BookDTO(isbn=str(uuid.uuid4()), full_name=f"book_name_{i}", author=f"author_{i}") for i in
-        range(books_num)
-    ]
-    new_books = [
-        BookDTO(isbn=str(uuid.uuid4()), full_name=f"book_name_{i}", author=f"author_{i}") for i in
-        range(books_num)
-    ]
 
     new_books = [
         BookDTO(isbn=str(uuid.uuid4()), full_name=f"book_name_{i}", author=f"author_{i}") for i in
@@ -102,18 +82,7 @@ async def create_books(
         BookDTO(isbn=str(uuid.uuid4()), full_name=f"book_name_{i}", author=f"author_{i}") for i in
         range(books_num)
     ]
-    new_books = [
-        BookDTO(isbn=str(uuid.uuid4()), full_name=f"book_name_{i}", author=f"author_{i}") for i in
-        range(books_num)
-    ]
-    new_books = [
-        BookDTO(isbn=str(uuid.uuid4()), full_name=f"book_name_{i}", author=f"author_{i}") for i in
-        range(books_num)
-    ]
-    new_books = [
-        BookDTO(isbn=str(uuid.uuid4()), full_name=f"book_name_{i}", author=f"author_{i}") for i in
-        range(books_num)
-    ]
+
 
     end_cpu_time = datetime.now()
     logger.warning(f"creating books CPU duration: {end_cpu_time - start_time}")

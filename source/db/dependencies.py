@@ -21,3 +21,13 @@ async def get_async_db_session() -> AsyncIterator[AsyncSession]:
         raise ex
     finally:
         await db_session.close()
+
+# engine = create_async_engine(settings.DB_CONNECTION_URL)
+# async_session = sessionmaker(
+#     engine, class_=AsyncSession, expire_on_commit=False
+# )
+#
+#
+# async def get_async_db_session() -> AsyncSession:
+#     async with async_session() as session:
+#         yield session
