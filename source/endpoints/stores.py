@@ -20,7 +20,6 @@ logging.basicConfig(format='%(asctime)s %(levelname)s {%(module)s} [%(funcName)s
 logger = logging.getLogger(__file__)
 
 
-
 @router.get("/store/", response_model=list[StoreDTO])
 async def get_stores(
         db: AsyncSession = Depends(get_async_db_session),
